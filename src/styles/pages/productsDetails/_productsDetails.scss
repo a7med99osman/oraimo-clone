@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&display=swap');
+.productDetails{
+    padding-inline: 30px;
+    .breadCrambs{
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        margin-top: 40px;
+        margin-bottom: 10px;
+        border-bottom: 1px solid rgb(160, 160, 160);
+        padding-bottom: 20px;
+        h2{
+            font-size: 27px;
+            font-weight: normal;
+        }
+    }
+    .productDetailsDiv{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .imgDiv{
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit :contain;
+            }
+        }
+        .detailsDiv{
+            h2{
+                font-size: 40px;
+                font-weight: 500;
+                margin-bottom: 20px;
+            }
+            .rate{
+                display: flex;
+                justify-content :start;
+                align-items: center;
+                gap: 17px;
+                margin-bottom: 15px;
+                .stars{
+                    display: flex;
+                    justify-content: start;
+                    align-items: center;
+                    .starIcon{
+                        color: $green;
+                        width: 30px;
+                        height: 30px;
+                    }
+                }
+                h3{
+                    font-size: 24px;
+                    font-weight: 500;
+                    color: rgb(69, 68, 68);
+                }
+            }
+            .price{
+                display: flex;
+                justify-content: start;
+                align-items : center;
+                gap: 30px;
+                margin-bottom: 25px;
+                .priceNow{
+                    font-size: 40px;
+                    font-weight: 500;
+                }
+                .priceBefore{
+                    padding-top: 9px;
+                    font-size: 20px;
+                    font-weight: normal;
+                    text-decoration: line-through;
+                    color: rgb(129, 129, 129);
+                }
+                
+            }
+            .detailsList{
+                .list{
+                    display: flex;
+                    justify-content: start;
+                    align-items: center;
+                    padding-block: 15px;
+                    border-bottom: 1px solid rgb(197, 197, 197) ;
+                    gap: 7px;
+                    .checkIcon{
+                        width: 40px;
+                        height: 40px; 
+                    }
+                    h3{
+                        font-weight: normal;
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+    .addCartBtn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        button{
+            font-family: "Hind Madurai", sans-serif;
+            font-size: 27px;
+            letter-spacing: .5px;
+            border-radius: 25px;
+            background-color: white;
+            color: rgb(70, 70, 70);
+            padding: 10px 150px;
+            transition: .4s;
+            cursor: pointer;
+            &:hover{
+                background-color: black;
+                color: #ffffff;
+            }
+        }
+        
+    }
+    
+}
+
+@media (max-width : 1024px) {
+    .productDetails{
+        padding-left: 15px;
+        .productDetailsDiv{
+            flex-direction: column;
+            .imgDiv{
+                width: 100%;
+            }
+        }
+        .addCartBtn{
+            button {
+                margin-top: 30px;
+                padding: 10px 100px;
+                position : relative;
+            }
+            
+        }
+    }
+}

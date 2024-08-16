@@ -1,0 +1,14 @@
+.layout{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-between;
+}
+
+.awardsbanner{
+    margin-top: 60px;
+    width: 100%;
+    img {
+        width: 100%;
+    }
+}

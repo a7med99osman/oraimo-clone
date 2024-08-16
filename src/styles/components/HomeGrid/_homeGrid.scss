@@ -1,0 +1,52 @@
+.HomeGrid{
+    background-color: #F5F6F6;
+    padding-block: 20px;
+    .homeGrid{
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #F5F6F6;
+        gap: 20px;
+        .innerSection{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            .singlDiv{
+                position: relative;
+                h6{
+                    font-weight: 600;
+                    font-size: 16px;
+                    position: absolute;
+                    top : 20px;
+                    left: 20px;
+                }
+            }
+        }
+    
+    }
+}
+
+@media (max-width : 1024px) {
+    .HomeGrid{
+        .homeGrid{
+            flex-direction: column;
+            gap: 0;
+            .innerSection{
+                .singlDiv{
+                    gap: 0;
+                    img{
+                        width: 100%;
+                        height: 60%;
+                        object-fit: contain;
+                    }
+                    h6{
+                        top: 7px;
+                        left: 7px ;
+                        text-align: start;
+                    }
+                }
+            }
+        }
+    }
+}

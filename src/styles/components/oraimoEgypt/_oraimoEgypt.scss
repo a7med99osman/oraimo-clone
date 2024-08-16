@@ -1,0 +1,85 @@
+.oraimoEgypt{
+    margin-top: 30px;
+    padding-inline: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    .title{
+        gap: 12px;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        margin-bottom: 15px;
+        .fcIcon {
+            width: 30px;
+            height: 30px;
+        }
+        h3{
+            font-weight: normal;
+            font-size: 28px;
+            font-weight: 600;
+        }
+    }
+    .followUs{
+        button{
+            background-color: black;
+            color: #ffffff;
+            padding: 7px 15px;
+            border-style: none;
+            border-radius: 20px;
+            font-size: 15px;
+            margin-bottom: 20px;
+            cursor: pointer;
+        }
+        P{
+            font-size: 19px;
+            span{
+                font-weight: 600;
+                font-size: 22px;
+                cursor: pointer;
+            }
+        }
+    }
+
+}
+.input{
+    border-radius: 50px;
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    input {
+        width: 45%;
+        font-size: 17px;
+        height: 7vh;
+        padding: 10px 20px;
+        border-radius: 25px 0 0 25px;
+        border : 1px solid gray
+    }
+    button {
+        padding: 10px 30px;
+        border-style: none;
+        background-color: black;
+        height: 7vh;
+        color: #ffffff;
+        border-radius: 0 25px 25px 0px;
+        .ring {
+            scale: 200%;
+        }
+    }
+}
+
+@media (max-width :1024px) {
+    .oraimoEgypt{
+        padding-inline: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+    .input {
+        input {
+            width: 80%
+        }
+    }
+
+}

@@ -1,0 +1,42 @@
+.producsSwiperDiv{
+    margin-top: 40px;
+    padding-inline: 70px;
+    .swiper-button-prev , .swiper-button-next {
+        color : $green !important;
+        scale: 80% !important;
+    }
+    .swiper-pagination-bullet {
+        width: 15px !important;
+        height: 15px !important;
+        margin-left: 20px !important;
+    }
+    .swiper-pagination-bullet-active{
+        background-color: $green !important;
+        width : 40px !important;
+        height : 15px !important;
+        border-radius: 40px !important;
+    }
+    .swiper {
+        height: 70% !important;
+        position: relative !important;
+    }
+    .swiper-pagination {
+        position: absolute !important;
+        bottom: 0px !important;
+    }
+    .productSwiper{
+        .productSwiperSlider{
+            height: 100% !important;
+            padding-block-end: 40px !important;
+        }
+    }
+}
+
+@media (max-width : 1024px) {
+    .producsSwiperDiv{
+        padding-inline: 5px ;
+    }
+    .swiper-button-prev , .swiper-button-next {
+        display: none !important;
+    }
+}

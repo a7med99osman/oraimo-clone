@@ -1,0 +1,57 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+// Global Style
+@import '../src/styles/global/variables';
+// Compnents Style
+@import './styles/components/header/header';
+@import './styles/components/bannerSwiper/bannerSwiber';
+@import './styles/components/serviceBar/serviceBar';
+@import './styles/components/categoryCard/categoryCard.scss';
+@import './styles/components/categoryFilter/categoryFilter.scss';
+@import './styles/components/headline/headline';
+@import "./styles//components/productCard/productCard";
+@import './styles/components/productsSwiper/productSwiper';
+@import './styles/pages/productsDetails/productsDetails';
+@import './styles/pages/category/category';
+@import './styles/pages/shop/shop';
+@import './styles/components/recomindation/recomindation';
+@import './styles//components/HomeGrid/homeGrid';
+@import './styles/components/oraimoEgypt/oraimoEgypt';
+@import './styles/pages/home/home';
+@import './styles//components/footerSwiper/footerSwiper';
+@import './styles/components/footer/footer';
+@import './styles//components//cartProductCard/cartProductCard';
+@import './styles/pages/cart/cart';
+@import './styles//pages/contact/contact';
+@import './styles/pages/about/about';
+
+
+*{
+    padding : 0 ;
+    margin : 0 ;
+    list-style: none;
+    box-sizing: border-box;
+}
+body {
+    background-color: #ffffffa7;
+    font-family: "Poppins", sans-serif;
+}
+.layout{
+    
+}
+
+.container{
+    padding: 1.06rem .62rem;
+}
+
+
+
+
+@media  (max-width : 1024px) {
+    html{
+        overflow-x: hidden;
+    }
+    .container{
+        padding: 1.56rem 1.62rem;
+    }
+}

@@ -1,0 +1,51 @@
+.serviceBar{
+    margin: 20px 70px 0 70px;
+    background-color: #FAFAFA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    border-radius:20px ;
+    height: 10vh;
+    .service{
+        background-color: #FAFAFA;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+        .serviceIcon {
+            height: 38px;
+            width: 38px;
+        }
+        h4{
+            font-size: 24px;
+            font-weight: normal;
+        }
+    }
+}
+
+@media (max-width : 1024px) {
+    .serviceSwiper{
+        height: 100px !important;
+        .seriveSwiperSlide{
+            .service{
+                background-color: #f7f7f7fd;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 25px;
+                border-radius:20px ;
+                margin: 20px 20px 0 20px;
+                    .serviceIcon {
+                        height: 30px;
+                        width: 30px;
+                    }
+                    h4{
+                        font-size: 16px;
+                        font-weight: normal;
+                        line-height: 86px;
+                    }
+            }
+        }
+    }
+}

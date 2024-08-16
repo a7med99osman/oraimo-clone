@@ -1,0 +1,25 @@
+.recomindation {
+    margin-top: 30px;
+    display: flex;
+    justify-content: start;
+    align-items : center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding-inline: 100px;
+    .productCard {
+            width: calc((60%/ 3) - 2rem);
+        }
+}
+
+@media (max-width : 1024px){
+    .recomindation{
+        padding-inline: 10px;
+        justify-content: center;
+        gap: 5px;
+        .productCard {
+            margin-top: 10px;
+            width: calc((90%/ 2) - 2px);
+            height : 100%;
+        }
+    }
+}

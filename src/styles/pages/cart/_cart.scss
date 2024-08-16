@@ -1,0 +1,24 @@
+
+.cart{
+    margin-top: 20px;
+    .header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 200px;
+        H2{
+            font-weight: normal;
+        }
+    }
+    .emptyCart {
+        margin-top: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        h2{
+            font-weight: normal;
+        }
+    }
+}
+
+

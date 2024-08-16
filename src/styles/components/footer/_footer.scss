@@ -1,0 +1,101 @@
+.footer{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+    .socialIcons{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: #191919;
+        width: 100%;
+        padding-block: 10px;
+        h3{
+            color: #ffffff;
+            font-weight: 600;
+            font-size: 17px;
+        }
+        ul{
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 60px;
+            li{
+                .icon {
+                    width: 30px;
+                    height: 30px;
+                    color: #ffffff;
+                }
+            }
+        }
+    }
+    .footerBar{
+        gap: 170px;
+        padding: 45px;
+        display: flex;
+        justify-content: start;
+        align-items: start;
+        background-color: black;
+        color: #ffffff;
+        width: 100%;
+        .customerService {
+            h2{
+                font-weight: 500;
+                font-size: 16px;
+            }
+            h6 {
+                font-weight: normal;
+                font-size: 13px;
+                color: #858585;
+                margin-top: 15px;
+                margin-bottom: 15px;
+                cursor: pointer;
+            }
+            h3{
+                font-weight: normal;
+                font-size: 16px;
+            }
+        }
+        ul{
+            h2{
+                font-weight: 500;
+                font-size: 16px;
+                margin-bottom: 15px;
+            }
+            li{
+                font-weight: normal;
+                font-size: 13px;
+                color: #858585;
+                margin-bottom: 15px;
+                cursor: pointer;
+            }
+        }
+    }
+    .copyRight{
+        width: 100%;
+        background-color: #191919;
+        display: flex;
+        justify-content: cenater;
+        align-items: center;
+        flex-direction: column;
+        gap: 15px;
+        padding : 20px 0 10px 0;
+        h3{
+            color: #ffffff;
+            font-size: 12px;
+            font-weight: normal;
+        }
+    }
+}
+
+@media (max-width : 1024px ){
+    .footer {
+        .footerBar {
+            flex-direction: column;
+            gap: 10px;
+        }
+    }
+}

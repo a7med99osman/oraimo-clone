@@ -1,0 +1,35 @@
+.card { 
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc(100% / 2 - 1rem);
+    img {
+        border-radius: 15px;
+        width: 100%;
+        object-fit: cover;
+    }
+    h3{
+        font-size: 25px;
+        position: absolute;
+        font-weight: 500;
+        top: 25px;
+        left: 60px;
+        width: 100%;
+        color: rgb(255, 255, 255);
+    }
+}
+@media (max-width : 1024px) {
+    .card {
+        img{
+            border-radius: 10px;
+        }
+        h3{
+            font-size: 15px;
+            font-weight: 400;
+            top: 7px;
+            left: 7px;
+            width: 100%;
+        }
+    }
+}
